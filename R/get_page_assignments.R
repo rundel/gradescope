@@ -1,4 +1,11 @@
-get_page_assignments = function(student, link) {
+#' Get assigned pages for each question and subquestion for an assignment
+#'
+#' @param link - url of the question assignment page, e.g. those returned by assignment_links
+#'
+#' @export
+#'
+
+get_page_assignments = function(link) {
   usethis::ui_info("Checking {student}'s page assignments")
 
   session = hayalbaz::puppet$new(cookies = cookies)
@@ -19,5 +26,5 @@ get_page_assignments = function(student, link) {
 
   pages %>%
     setNames(questions) %>%
-    c(student = student, link = link, .)
+    c(link = link, .)
 }

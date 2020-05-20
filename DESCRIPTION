@@ -16,7 +16,9 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.0
 Imports: 
     purrr,
-    hayalbaz (>= 0.0.0.9000)
+    hayalbaz (>= 0.0.0.9000),
+    fs,
+    usethis
 Remotes: 
     rundel/hayalbaz
 URL: https://github.com/rundel/gradescope

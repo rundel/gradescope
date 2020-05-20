@@ -1,4 +1,11 @@
-assignment_links = function() {
+#' Get links for page assignment
+#'
+#' @param url - url of the assignment on gradescope
+#' @param cookies - list object containing login cookies for gradescope, obtained using `get_login_cookies`.
+#'
+#' @export
+#'
+assignment_links = function(url, cookies) {
   session = hayalbaz::puppet$new(cookies = cookies)
 
   # Load assignment page
