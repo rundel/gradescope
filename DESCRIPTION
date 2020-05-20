@@ -17,5 +17,7 @@ RoxygenNote: 7.1.0
 Imports: 
     purrr,
     hayalbaz (>= 0.0.0.9000)
-Remotes:  
+Remotes: 
     rundel/hayalbaz
+URL: https://github.com/rundel/gradescope
+BugReports: https://github.com/rundel/gradescope/issues
