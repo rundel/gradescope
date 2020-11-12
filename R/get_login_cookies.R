@@ -1,3 +1,4 @@
+#' @export
 get_login_cookies = function() {
 
   usethis::ui_info("Connecting to gradescope")
@@ -8,7 +9,7 @@ get_login_cookies = function() {
   session$wait_for_selector(".js-logInButton")
   session$click(".js-logInButton")
 
-  session$wait_for_selector('input[type="submit", name="commit"]')
+  #session$wait_for_selector('input[type="submit", name="commit"]')
 
   usethis::ui_info(c(
     "Please log into gradescope using your prefered authentication method",
